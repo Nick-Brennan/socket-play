@@ -1,0 +1,13 @@
+.cell{
+	border: 1px solid black;
+	padding: 5px;
+	height: 5px;
+	width: 5px;
+	margin: 0px;
+}
+
+#test{
+	height: 10vh;
+	width: 10%;
+	border: 2px solid green;
+}

@@ -6,8 +6,9 @@
 	margin: 0px;
 }
 
-#test{
+.test{
 	height: 10vh;
 	width: 10%;
 	border: 2px solid green;
+	display: inline-block;
 }

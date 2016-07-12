@@ -12,4 +12,8 @@ $(function(){
 	socket.on('ping', function(data){
 		$('body').append(data);
 	});
+
+	$('.test').hover(function(){
+		$(this).toggleClass('hover');
+	})
 });

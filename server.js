@@ -25,6 +25,7 @@ io.on('connection', function(socket){
 
 	socket.on('hover', function(data){
 		console.log(data);
+		socket.broadcast.emit('hResponse', data);
 	})
 });
 

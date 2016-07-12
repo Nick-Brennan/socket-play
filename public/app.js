@@ -13,6 +13,12 @@ $(function(){
 		$('body').append(data);
 	});
 
+	socket.on('hResponse',  function(data){
+		console.log(data);
+		var ident = "#" + data;
+		$(ident).toggleClass('hover');
+	});
+
 	$('.test').hover(function(){
 		$(this).toggleClass('hover');
 		socket.emit('hover', $(this).attr('id'))

@@ -16,10 +16,16 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
 	console.log('socket connected');
+
 	socket.emit('test', "hello world!");
+
 	socket.on('pressed', function(){
 		socket.emit('ping', 'Pressed the button');
 	});
+
+	socket.on('hover', function(data){
+		console.log(data);
+	})
 });
 
 http.listen(process.env.PORT || 3000, function(){

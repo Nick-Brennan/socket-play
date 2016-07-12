@@ -15,5 +15,6 @@ $(function(){
 
 	$('.test').hover(function(){
 		$(this).toggleClass('hover');
+		socket.emit('hover', $(this).attr('id'))
 	})
 });
